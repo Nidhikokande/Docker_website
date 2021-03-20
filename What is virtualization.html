@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+          integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link href="css/content.css" rel="stylesheet">
+
+    <title>Docker, Linux and Containerization</title>
+</head>
+<body style="background-color:ghostwhite;">
+<header class=".bg-light">
+    <!-- Content here -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-info">
+        <a class="navbar-brand" href="index.html">Home</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="About Us.html">About Us<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Docker, Linux and Containerization
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="What%20is%20virtualization.html"> What is virtualization </a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="What%20is%20containerization.html">What is containerization</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="comparison.html">comparison</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="A%20tutorial%20to%20setup%20a%20web%20server%20using%20docker.html">A tutorial to setup a web server using docker</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="Linux%20commands.html">Linux commands</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="A%20tutorial%20to%20connect%20Docker%20with%20Pycharm.html">A tutorial to connect Docker with Pycharm </a>
+                    </div>
+            </ul>
+        </div>
+    </nav>
+    <div id="intro" class="view">
+        <div class="mask rgba-black-strong">
+
+            <div class="container-fluid d-flex align-items-center justify-content-center h-100">
+
+                <div class="row d-flex justify-content-center text-center">
+
+                    <div class="col-md-100">
+                        <br>
+
+                        <h2 class="display-4 font-weight-bold white-text pt-2 mb-1">Virtualization</h2>
+
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</header>
+<br><br>
+<div class="container">
+    <h1 class="text-center">What is Virtualization?</h1>
+    <hr><br>
+    <img src="images\virtualization.jpg" class="d-block w-100" alt="...">
+
+    <h4 class="text-justify">Virtualization is the process of running a virtual instance of a computer system in a layer abstracted from the actual hardware. Most commonly, it refers to running multiple operating systems on a computer system simultaneously. To the applications running on top of the virtualized machine, it can appear as if they are on their own dedicated machine, where the operating system, libraries, and other programs are unique to the guest virtualized system and unconnected to the host operating system which sits below it.</h4>
+
+
+    <br>
+    <h1 class="text-center">What is a Virtual Machine (VM)?</h1>
+    <hr>
+    <h4 class="text-justify">A virtual machine is the emulated equivalent of a computer system that runs on top of another system. Virtual machines may have access to any number of resources: computing power, through hardware-assisted but limited access to the host machine's CPU and memory; one or more physical or virtual disk devices for storage; a virtual or real network inferface; as well as any devices such as video cards, USB devices, or other hardware that are shared with the virtual machine. If the virtual machine is stored on a virtual disk, this is often referred to as a disk image. A disk image may contain the files for a virtual machine to boot, or, it can contain any other specific storage needs.</h4>
+
+    <br>
+    <h1 class="text-center">What are the benefits of Virtualization?</h1>
+    <hr>
+    <h4 class="text-justify">Virtualization can increase IT agility, flexibility and scalability while creating significant cost savings. Greater workload mobility, increased performance and availability of resources, automated operations – they’re all benefits of virtualization that make IT simpler to manage and less costly to own and operate. Additional benefits include:</h4>
+    <h5><ul class="1">
+        <li>Reduced capital and operating costs</li>
+        <li>Minimized or eliminated downtime</li>
+        <li>Increased IT productivity, efficiency, agility and responsiveness</li>
+        <li>Faster provisioning of applications and resources</li>
+        <li>Greater business continuity and disaster recovery</li>
+        <li>Minimized or eliminated downtime</li>
+        <li>Simplified data center management</li>
+        <li>Availability of a true Software-Defined Data Center</li>
+    </ul></h5>
+    <br>
+    <h1 class="text-center">How does Virtualization work?</h1>
+    <hr>
+    <h4 class="text-justify">Due to the limitations of x86 servers, many IT organizations must deploy multiple servers, each operating at a fraction of their capacity, to keep pace with today’s high storage and processing demands, resulting in huge inefficiencies and excessive operating costs.
+
+        <br><br>Virtualization relies on software to simulate hardware functionality and create a virtual computer system. This enables IT organizations to run more than one virtual system – and multiple operating systems and applications – on a single server. The resulting benefits include economies of scale and greater efficiency.
+
+        <br><br>A virtual computer system is known as a “virtual machine” (VM): a tightly isolated software container with an operating system and application inside. Each self-contained VM is completely independent. Putting multiple VMs on a single computer enables several operating systems and applications to run on just one physical server, or “host.”
+
+        <br><br>A thin layer of software called a “hypervisor” decouples the virtual machines from the host and dynamically allocates computing resources to each virtual machine as needed.</h4>
+    <br><h4 class="text-justify">Key Properties of VM:</h4>
+    <h5><ul class="2">
+        <li><b>Partitioning</b></li>
+        <ul class="2.1"><li>Run multiple operating systems on one physical machine</li><li>Divide system resources between virtual machines</li></ul>
+        <li><b>Isolation</b></li>
+        <ul class="2.2"><li>Provide fault and security isolation at the hardware level</li><li>Preserve performance with advanced resource controls</li></ul>
+        <li><b>Encapsulation</b></li>
+        <ul class="2.3"><li>Save the entire state of a virtual machine to files</li><li>Move and copy virtual machines as easily as moving and copying files</li></ul>
+        <li><b>Hardware Independence</b></li>
+        <ul class="2.4"><li>Provision or migrate any virtual machine to any physical server</li></ul>
+    </ul></h5>
+
+
+    <br><h1 class="text-center">Types of Virtualization</h1>
+    <hr><br>
+    <p><ul class="3">
+    <h5><li><b>Data Virtualization</b></li></h5>
+    <img src="images\datav.png" class="card-img-top" alt="...">
+    <br><p class="text-justify">Data that’s spread all over can be consolidated into a single source. Data virtualization allows companies to treat data as a dynamic supply—providing processing capabilities that can bring together data from multiple sources, easily accommodate new data sources, and transform data according to user needs. Data virtualization tools sit in front of multiple data sources and allows them to be treated as single source, delivering the needed data—in the required form—at the right time to any application or user.</p>
+
+    <br><h5><li><b>Desktop Virtualization</b></li></h5>
+    <img src="images\desktopv.jpg" class="card-img-top" alt="...">
+    <br><p class="text-justify">Easily confused with operating system virtualization—which allows you to deploy multiple operating systems on a single machine—desktop virtualization allows a central administrator (or automated administration tool) to deploy simulated desktop environments to hundreds of physical machines at once. Unlike traditional desktop environments that are physically installed, configured, and updated on each machine, desktop virtualization allows admins to perform mass configurations, updates, and security checks on all virtual desktops.</p>
+
+    <br><h5><li><b>Server Virtualization</b></li></h5>
+    <img src="images\serverv.png" class="card-img-top" alt="...">
+    <br><p class="text-justify">Servers are computers designed to process a high volume of specific tasks really well so other computers—like laptops and desktops—can do a variety of other tasks. Virtualizing a server lets it to do more of those specific functions and involves partitioning it so that the components can be used to serve multiple functions.</p>
+
+    <br><h5><li><b>Operating System Virtualization</b></li></h5>
+    <img src="images\osv.png" class="card-img-top" alt="...">
+    <br><p class="text-justify">Operating system virtualization happens at the kernel—the central task managers of operating systems. It’s a useful way to run Linux and Windows environments side-by-side. Enterprises can also push virtual operating systems to computers, which:
+
+    <ul class="4">
+        <li>Reduces bulk hardware costs, since the computers don’t require such high out-of-the-box capabilities</li>
+        <li>Increases security, since all virtual instances can be monitored and isolated</li>
+        <li>Limits time spent on IT services like software updates</li></ul></p>
+
+    <br><h5><li><b>Network Functions Virtualization</b></li></h5>
+    <br><p class="text-justify">Network functions virtualization (NFV) separates a network's key functions (like directory services, file sharing, and IP configuration) so they can be distributed among environments. Once software functions are independent of the physical machines they once lived on, specific functions can be packaged together into a new network and assigned to an environment. Virtualizing networks reduces the number of physical components—like switches, routers, servers, cables, and hubs—that are needed to create multiple, independent networks, and it’s particularly popular in the telecommunications industry.</p>
+</ul>
+
+</div>
+<br><br>
+<!-- Site footer -->
+<p style="text-align:center">
+    <a class="btn btn-primary btn-lg" href="About Us.html" role="button">Click here <br> to know more!!!!</a></p>
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+        <li class="breadcrumb-item"><a href="About Us.html">About Us</a></li>
+        <li class="breadcrumb-item"><a href="What%20is%20virtualization.html">What is virtualization</a></li>
+        <li class="breadcrumb-item"><a href="What%20is%20containerization.html">What is containerization</a></li>
+        <li class="breadcrumb-item"><a href="comparison.html">comparison</a></li>
+        <li class="breadcrumb-item"><a href="A%20tutorial%20to%20setup%20a%20web%20server%20using%20docker.html">A tutorial to setup a web server using docker</a></li>
+        <li class="breadcrumb-item"><a href="Linux%20commands.html">Linux commands</a></li>
+        <li class="breadcrumb-item"><a href="A%20tutorial%20to%20connect%20Docker%20with%20Pycharm.html">A tutorial to connect Docker with Pycharm</a></li>
+    </ol>
+</nav>
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+</body>
+</html>
