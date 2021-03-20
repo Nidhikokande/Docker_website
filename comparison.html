@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+          integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link href="css/content.css" rel="stylesheet">
+
+    <title>Docker, Linux and Containerization</title>
+</head>
+<body style="background-color:ghostwhite;">
+<header class=".bg-light">
+    <!-- Content here -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html">Home</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="About Us.html">About <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Docker, Linux and Containerization
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="What%20is%20virtualization.html"> What is virtualization </a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="What%20is%20containerization.html">What is containerization</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="comparison.html">comparison</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="A%20tutorial%20to%20setup%20a%20web%20server%20using%20docker.html">A tutorial to setup a web server using docker</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="Linux%20commands.html">Linux commands</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="A%20tutorial%20to%20connect%20Docker%20with%20Pycharm.html">A tutorial to connect Docker with Pycharm </a>
+                    </div>
+            </ul>
+        </div>
+    </nav>
+    <div id="intro" class="view">
+        <div class="mask rgba-black-strong">
+
+            <div class="container-fluid d-flex align-items-center justify-content-center h-100">
+
+                <div class="row d-flex justify-content-center text-center">
+
+                    <div class="col-md-100">
+                        <br>
+                        <br>
+                        <br>
+                        <!-- Heading -->
+                        <h2 class="display-4 font-weight-bold white-text pt-2 mb-1">Differnce Between<br>Virtualization and Containerization</h2>
+
+                        <!-- Divider -->
+                        <hr class="hr-light">
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</header>
+<br><br>
+
+
+<div class="container">
+
+    <img src="images\compare.jpg" class="d-block w-100" alt="...">
+
+    <h4 class="text-justify">
+        <b>Containerization</b> is a lightweight alternative to full machine virtualization that involves encapsulating an application in a container with its own operating environment.
+        Containers use the same host operating system (OS) repeatedly, instead of installing an OS for each guest VM.
+        Containers also provide a way to isolate applications and provide a virtual platform for applications to run on . Two main differences exist between a container and a hypervisor system.
+        <br><br><b>A virtual machine</b> is a copy of a complete server basically it has its own OS which means the replication of binaries, drivers, or libraries between different VMs running on same server and a wastage significant server resources.
+        <br><br>To explain in brief, Virtualization enables you to run multiple operating systems on the hardware of a single physical server, while Containerization enables you to deploy multiple applications using the same operating system on a single virtual machine or server.
+
+    </h4>
+    <br>
+    <br>
+    <div class="table-responsive">
+        <table class="table table-striped table-bordered table-hover">
+
+            <thead class="thead-dark">
+            <tr>
+                <th scope="col"><h4>Sr. No.</h4></th>
+                <th scope="col"><h4>Key Points</h4></th>
+                <th scope="col"><h4>Virtualization</h4></th>
+                <th scope="col"><h4>Containerization</h4></th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td><b>1</b></td>
+                <td><b>Architecture</b></td>
+                <td><img src="https://docs.microsoft.com/en-us/virtualization/windowscontainers/about/media/virtual-machine-diagram.svg" class="card-img-top" alt="..."><p>Image Source: https://docs.microsoft.com/</p></td>
+                <td><img src="https://docs.microsoft.com/en-us/virtualization/windowscontainers/about/media/container-diagram.svg" class="card-img-top" alt="..."><p>Image Source: https://docs.microsoft.com/</p></td>
+            </tr>
+            <tr>
+                <td><b>2</b></td>
+                <td><b>Isolation</b></td>
+                <td>Provides complete isolation from the host operating system and other VMs. This is useful when a strong security boundary is critical, such as hosting apps from competing companies on the same server or cluster</td>
+                <td>Typically provides lightweight isolation from the host and other containers, but doesn't provide as strong a security boundary as a VM</td>
+            </tr>
+            <tr>
+                <td><b>3</b></td>
+                <td><b>Operating System</b></td>
+                <td>Runs a complete operating system including the kernel, thus requiring more system resources (CPU, memory, and storage)</td>
+                <td>Runs the user mode portion of an operating system, and can be tailored to contain just the needed services for your app, using fewer system resources</td>
+            </tr>
+
+            <tr>
+                <td><b>4</b></td>
+                <td><b>Persistent Storage</b></td>
+                <td>Use a virtual hard disk (VHD) for local storage for a single VM, or an SMB file share for storage shared by multiple servers</td>
+                <td>Use Disks for local storage for a single node, or SMB shares for storage shared by multiple nodes or servers</td>
+            </tr>
+            <tr>
+                <td><b>5</b></td>
+                <td><b>Load Balancing</b></td>
+                <td>Virtual machine load balancing moves running VMs to other servers in a failover cluster</td>
+                <td>Containers themselves don't move; instead an orchestrator can automatically start or stop containers on cluster nodes to manage changes in load and availability</td>
+            </tr>
+
+            <tr>
+                <td><b>6</b></td>
+                <td><b>Networking</b></td>
+                <td>Uses virtual network adapters</td>
+                <td>Uses an isolated view of a virtual network adapter, providing a little less virtualization–the host's firewall is shared with containers–while using less resources</td>
+            </tr>
+
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<!-- Site footer -->
+<p style="text-align:center">
+    <a class="btn btn-primary btn-lg" href="About Us.html" role="button">Click here <br> to know more!!!!</a></p>
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+        <li class="breadcrumb-item"><a href="About Us.html">About Us</a></li>
+        <li class="breadcrumb-item"><a href="What%20is%20virtualization.html">What is virtualization</a></li>
+        <li class="breadcrumb-item"><a href="What%20is%20containerization.html">What is containerization</a></li>
+        <li class="breadcrumb-item"><a href="comparison.html">comparison</a></li>
+        <li class="breadcrumb-item"><a href="A%20tutorial%20to%20setup%20a%20web%20server%20using%20docker.html">A tutorial to setup a web server using docker</a></li>
+        <li class="breadcrumb-item"><a href="Linux%20commands.html">Linux commands</a></li>
+        <li class="breadcrumb-item"><a href="A%20tutorial%20to%20connect%20Docker%20with%20Pycharm.html">A tutorial to connect Docker with Pycharm</a></li>
+    </ol>
+</nav>
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+</body>
+</html>
