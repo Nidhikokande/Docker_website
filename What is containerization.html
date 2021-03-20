@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+          integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link href="css/content.css" rel="stylesheet">
+
+    <title>Docker, Linux and Containerization</title>
+</head>
+<body style="background-color:ghostwhite;">
+<header class=".bg-light">
+    <!-- Content here -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-info">
+        <a class="navbar-brand" href="index.html">Home</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="About Us.html">About Us<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Docker, Linux and Containerization
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="What%20is%20virtualization.html"> What is virtualization </a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="What%20is%20containerization.html">What is containerization</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="comparison.html">comparison</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="A%20tutorial%20to%20setup%20a%20web%20server%20using%20docker.html">A tutorial to setup a web server using docker</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="Linux%20commands.html">Linux commands</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="A%20tutorial%20to%20connect%20Docker%20with%20Pycharm.html">A tutorial to connect Docker with Pycharm </a>
+                    </div>
+            </ul>
+        </div>
+    </nav>
+    <div id="intro" class="view">
+        <div class="mask rgba-black-strong">
+
+            <div class="container-fluid d-flex align-items-center justify-content-center h-100">
+
+                <div class="row d-flex justify-content-center text-center">
+
+                    <div class="col-md-100">
+
+                        <br>
+                        <!-- Heading -->
+                        <h2 class="display-4 text-center font-weight-bold white-text pt-5 mb-2">Containerization</h2>
+
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</header>
+
+<div class="container">
+    <h1 class="text-center">What is Containerization?</h1>
+    <hr><br>
+    <img src="images/containerization.png" class="card-img-top" alt="...">
+    <p><i>Image Source: https://www.ibm.com/</i></p>
+    <h4 class="text-justify">Containerization is defined as a form of operating system virtualization, through which applications are run in isolated user spaces called containers, all using the same shared operating system (OS). A container is essentially a fully packaged and portable computing environment:</h4>
+    <h5><ul class="1">
+        <li>Everything an application needs to run – its binaries, libraries, configuration files and dependencies – is encapsulated and isolated in its container.</li>
+        <li>The container itself is abstracted away from the host OS, with only limited access to underlying resources – much like a lightweight VM.</li>
+        <li>As a result, the containerized application can be run on various types of infrastructure—on bare metal, within VMs, and in the cloud—without needing to refactor it for each environment.</li>
+    </ul></h5>
+    <br>
+    <h1 class="text-center">How Does Containerization Actually Work?</h1>
+    <hr>
+    <h4 class="text-justify">Each container is an executable package of software, running on top of a host OS. A host(s) may support many containers (tens, hundreds or even thousands) concurrently, such as in the case of a complex microservices architecture that uses numerous containerized ADCs. This setup works because all containers run minimal, resource-isolated processes that others cannot access.<br>Think of a containerized application as the top layer of a multi-tier cake:</h4>
+    <h5><ol class="2">
+        <li>At the bottom, there is the hardware of the infrastructure in question, including its CPU(s), disk storage and network interfaces.</li>
+        <li>Above that, there is the host OS and its kernel – the latter serves as a bridge between the software of the OS and the hardware of the underlying system.</li>
+        <li>The container engine and its minimal guest OS, which are particular to the containerization technology being used, sit atop the host OS.</li>
+        <li>At the very top are the binaries and libraries (bins/libs) for each application and the apps themselves, running in their isolated user spaces (containers).</li>
+    </ol></h5>
+    <br>
+    <h1 class="text-center">What Are the Main Benefits of Containerization?</h1>
+    <hr>
+    <h4 class="text-justify">Benefits are:</h4>
+    <h5><ol class="3">
+        <li>Portability between different platforms and clouds—it’s truly write once, run anywhere.</li>
+        <li>Efficiency through using far fewer resources than VMs and delivering higher utilization of compute resources.</li>
+        <li>Agility that allows developers to integrate with their existing DevOps environment.</li>
+        <li>Higher speed in the delivery of enhancements. Containerizing monolithic applications using microservices helps development teams create functionality with its own life cycle and scaling policies.</li>
+        <li>Improved security by isolating applications from the host system and from each other.</li>
+        <li>Faster app start-up and easier scaling.</li>
+        <li>Flexibility to work on virtualized infrastructures or on bare metal servers.</li>
+        <li>Easier management since install, upgrade, and rollback processes are built into the Kubernetes platform.</li>
+    </ol></h5>
+    <br>
+    <h1 class="text-center">Why are containers important?</h1>
+    <hr>
+    <h4 class="text-justify">Containerization is one of the latest developments in the evolution of cloud computing. Many organizations, both large and small, are looking at containers as a means to improve application life-cycle management through capabilities such as continuous integration and continuous delivery. Also, certain implementations of containers conform to the principles of open source, which is appealing to organizations wary of being locked-in to a specific vendor.<br><br>Containers are also the foundation of a private cloud and, just like the early days of cloud computing, are becoming a game changer for many organizations. Private cloud becomes the platform of choice to deliver the security and control required while simultaneously enabling the consumption of multiple cloud services. This is typical of situations where organizations are running both existing application workloads and new application workloads in the cloud.<br><br>Containers help to satisfy three key use cases that reflect what enterprises require to run their applications in the cloud:</h4>
+    <h5><ol class="4">
+        <li>Modernize your existing applications.</li>
+        <li>Create new cloud native enterprise applications.</li>
+        <li>Open your data center to work with cloud services.</li>
+    </ol></h5>
+</div>
+<!-- Site footer -->
+<p style="text-align:center">
+    <a class="btn btn-primary btn-lg" href="About Us.html" role="button">Click here <br> to know more!!!!</a></p>
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+        <li class="breadcrumb-item"><a href="About Us.html">About Us</a></li>
+        <li class="breadcrumb-item"><a href="What%20is%20virtualization.html">What is virtualization</a></li>
+        <li class="breadcrumb-item"><a href="What%20is%20containerization.html">What is containerization</a></li>
+        <li class="breadcrumb-item"><a href="comparison.html">comparison</a></li>
+        <li class="breadcrumb-item"><a href="A%20tutorial%20to%20setup%20a%20web%20server%20using%20docker.html">A tutorial to setup a web server using docker</a></li>
+        <li class="breadcrumb-item"><a href="Linux%20commands.html">Linux commands</a></li>
+        <li class="breadcrumb-item"><a href="A%20tutorial%20to%20connect%20Docker%20with%20Pycharm.html">A tutorial to connect Docker with Pycharm</a></li>
+    </ol>
+</nav>
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+</body>
+</html>
